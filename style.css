@@ -1,0 +1,177 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Quicksand';
+    src: url('font-family/Quicksand-Medium.ttf');
+}
+body{
+    background:linear-gradient(to bottom right, #d74990, purple 60%);
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Quicksand';
+}
+img{
+    width:100%;
+}
+.flex{
+    display: flex;
+}
+.justify-center{
+    justify-content: center;
+}
+.col{
+    flex-direction: column;
+}
+.align-center{
+    align-items: center;
+}
+.relative{
+    position: relative;
+}
+.absolute{
+    position: absolute;
+}
+.pointer{
+    cursor: pointer;
+}
+.roll-dice-container{
+    display: flex;
+    min-height:100vh;
+}
+.hidden{
+    display: none;
+}
+.text-center{
+    text-align: center;
+}
+.game-container{
+    min-width: 310px;
+    width: 70%;
+    border-radius: 7px;
+    background-color: #e9adbcc9;
+}
+.player-container{
+    padding: 3.5rem 0.8rem 1.5rem;
+    width: 50%;
+}
+.player-container:first-child{
+    border-radius: 7px 0 0 7px;
+}
+.player-container:last-child{
+    border-radius: 0 7px 7px 0;
+}
+.player-container h2{
+    font-size: 1.8rem;
+    padding-bottom: 0.7rem;
+}
+.total-score{
+    font-size: 4rem;
+    color:#cf156a;
+    margin-bottom: 4rem;
+}
+.current-score-container{
+    background-color: #bd3050;
+    padding: 0.7rem;
+    border-radius: 5px;
+    width: 7rem;
+    margin: 7rem auto 0.5rem;
+    color: #fff;
+}
+.current-score{
+    font-size: 1.7rem;
+}
+.game-btn{
+    padding: 0.2rem 0.9rem;
+    border-radius: 16px;
+    border: 0;
+    font-size: 0.9rem;
+    background-color: rgba(255, 255, 255,0.6);
+    transition: 0.3s;
+}
+.position-horizontal-center{
+    left: 50%;
+    transform: translateX(-50%);
+}
+.new-game-btn{
+    top: 1rem;
+}
+.roll-dice-btn{
+    bottom: 11rem;
+}
+.dice-icon{
+    padding-right: 0.3rem;
+}
+.hold-btn{
+    bottom: 8.2rem;
+}
+.dice-display-container{
+    width: 4.5rem;
+    height: 4.5rem;
+    top: 6.5rem;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
+}
+.activeBg{
+    background-color:#e9b6c3;
+    transition: 0.5s;
+}
+.winnerBg{
+    background-color: #2f2f2f;
+    transition: 0.5s;
+}
+.winner-text-container{
+    top: 5.6rem;
+    background-color: rgba(255, 255, 255,0.6);
+    padding: 0.3rem;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.game-btn:active{
+    transform: translate(-50%,7%);
+}
+@media (min-width:900px) {
+    .game-btn{
+        padding: 0.5rem 1.2rem;
+        font-size: 1rem;
+        border-radius: 20px;
+    }
+    .game-container{
+        min-width: 715px;
+        max-width: 850px;
+    }
+    .player-container{
+        padding: 5.5rem 0.8rem;
+    }
+    .player-container h2{
+        font-size: 2.7rem;
+    }
+    .new-game-btn{
+        top: 1.5rem;
+    }
+    .current-score-container{
+        width: 9.7rem;
+        padding: 0.9rem 1rem;
+    }
+    .current-score{
+        padding-top: 0.4rem;
+    }
+    .hold-btn{
+        bottom: 6rem;
+    }
+    .roll-dice-btn{
+        bottom: 9.3rem;
+    }
+    .dice-display-container{
+        width: 6.5rem;
+        height: 6.5rem;
+        top: 9rem;
+    }
+    .winner-text-container{
+        width: 12rem;
+        top: 10.6rem;
+        font-size: 1.5rem;
+        padding: 0.5rem 0.7rem;
+    }
+}

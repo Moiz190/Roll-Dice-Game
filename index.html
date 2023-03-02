@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roll Dice</title>
+    <link rel="stylesheet" href="font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="roll-dice-container flex align-center justify-center">
+       <div class="game-container flex relative">
+           <div class="player-container text-center activeBg player0Container">
+               <h2>PLAYER 1</h2>
+            <span class="total-score" id="player0TotalScore">0</span>
+            <div class="current-score-container flex col">
+                <span>Current</span>
+                <span class="current-score" id="player0CurrentScore">0</span>
+            </div>
+        </div>
+        <div onclick="reset()" class="new-game-btn game-btn position-horizontal-center absolute pointer"><span><i class="fa-solid fa-arrows-rotate"></i></span> NEW GAME</div>
+        <div class="winner-text-container text-center absolute position-horizontal-center hidden">
+            <h4 class="player-winner-text"></h4>
+        </div>
+        <div class="dice-display-container hidden absolute position-horizontal-center" id="diceContainer">
+            <img src="" id='diceImage'/>
+        </div>
+        <div onclick="rollDice()" class="roll-dice-btn position-horizontal-center game-btn absolute pointer"><span class="dice-icon"><i class="fa-solid fa-dice"></i></span>ROLL DICE</div>
+        <div onclick="hold()" class="hold-btn game-btn absolute position-horizontal-center pointer"><span><i class="fa-solid fa-gamepad"></i></span> HOLD</div>
+        <div class="player-container text-center player1Container">
+            <h2>PLAYER 2</h2>
+            <span class="total-score" id="player1TotalScore">0</span>
+            <div class="current-score-container flex col">
+                <span>Current</span>
+                <span class="current-score" id="player1CurrentScore">0</span>
+            </div>
+        </div>
+       </div> 
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
